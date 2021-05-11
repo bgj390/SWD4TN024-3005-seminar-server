@@ -16,10 +16,10 @@ const path = require('path')
  * type $ node index.js to run server
  */
 
-//fetchData()
+fetchData()
 
 app.get('/', (request, response) => {
-    response.send('<h1>Check endpoint /allGroceries to view data if the database is populated!</h1>')
+    response.send('<h1>Go to /allGroceries to view data (if the database is populated)!</h1>')
 })
 
 app.get('/allGroceries', (request, response) => {

@@ -9,18 +9,17 @@ const { json } = require('express')
 /**
  * I got these values based on parameters set at frontend
  * where I tried to find the piece of grocery
- * with the lowest 150 overall values
- * these return 188 
+ * with the lowest 150th overall values
  */
 
 const checkForLowValues = (jsonObject) => {
-    if (jsonObject.energyKcal < 186.71900960875053 &&
-        jsonObject.fat < 3.34957594950773 &&
-        jsonObject.protein < 13.4633922894809 &&
-        jsonObject.carbohydrate < 24.5261205170774 &&
-        jsonObject.fiber < 1.40907811503731 &&
-        jsonObject.sugar < 1.33681051758454 &&
-        jsonObject.salt < 831.082691048342) {
+    if (jsonObject.energyKcal < 227 &&
+        jsonObject.fat < 1.2 &&
+        jsonObject.protein < 7.4 &&
+        jsonObject.carbohydrate < 44 &&
+        jsonObject.fiber < 3 &&
+        jsonObject.sugar < 1 &&
+        jsonObject.salt < 650) {
         return true
     }
     return false
