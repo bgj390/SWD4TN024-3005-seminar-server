@@ -16,7 +16,7 @@ const path = require('path')
  * type $ node index.js to run server
  */
 
-fetchData()
+//fetchData()
 
 app.get('/', (request, response) => {
     response.send('<h1>Go to /allGroceries to view data (if the database is populated)!</h1>')
